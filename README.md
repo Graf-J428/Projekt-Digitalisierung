@@ -33,7 +33,7 @@ Jeder Seitenordner unter `portal/` ist gleich aufgebaut:
 | Nr. | Seite | Mockup | Code |
 |---|---|---|---|
 | 00 | [Styleguide](portal/00-styleguide/) | vorhanden | – |
-| 01 | [Login](portal/01-login/) | vorhanden | offen |
+| 01 | [Login](portal/01-login/) | vorhanden | Klick-Dummy |
 | 02 | [Startseite](portal/02-startseite/) | vorhanden | offen |
 | 03 | [Mitarbeiterverzeichnis](portal/03-mitarbeiterverzeichnis/) | vorhanden | offen |
 | 04 | [Urlaubsplan](portal/04-urlaubsplan/) | vorhanden | offen |
