@@ -1,0 +1,1 @@
+// JavaScript für die Seite
