@@ -1,0 +1,10 @@
+{
+	"_hinweis": "Nur fiktive Testdaten (siehe docs/05-rollen-berechtigungskonzept.md, KAN-28). Wird spaeter durch den UserInfo-Endpunkt aus SAP HCM ersetzt (KAN-63).",
+	"users": [
+		{ "username": "TEST_MA01",   "password": "test", "name": "Max Mustermann", "orgUnit": "Vertrieb",          "roles": ["ESS"] },
+		{ "username": "TEST_MA02",   "password": "test", "name": "Erika Beispiel", "orgUnit": "Vertrieb",          "roles": ["ESS"] },
+		{ "username": "TEST_FK01",   "password": "test", "name": "Paul Probe",     "orgUnit": "Leitung Vertrieb",  "roles": ["ESS", "MSS"] },
+		{ "username": "TEST_HR01",   "password": "test", "name": "Hanna Test",     "orgUnit": "Personal",          "roles": ["ESS", "HR"] },
+		{ "username": "TEST_NOROLE", "password": "test", "name": "Nora Ohne",      "orgUnit": "",                  "roles": [] }
+	]
+}

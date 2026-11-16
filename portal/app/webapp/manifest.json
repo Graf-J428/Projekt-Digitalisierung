@@ -1,0 +1,122 @@
+{
+	"_version": "1.58.0",
+	"sap.app": {
+		"id": "de.hsrm.personalportal",
+		"type": "application",
+		"i18n": {
+			"bundleUrl": "i18n/i18n.properties",
+			"supportedLocales": [
+				""
+			],
+			"fallbackLocale": ""
+		},
+		"applicationVersion": {
+			"version": "0.1.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}"
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "de.hsrm.personalportal.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.120.0",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "de.hsrm.personalportal.i18n.i18n",
+					"supportedLocales": [
+						""
+					],
+					"fallbackLocale": ""
+				}
+			},
+			"users": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/users.json",
+				"preload": true
+			},
+			"tiles": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/tiles.json",
+				"preload": true
+			},
+			"permissions": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/permissions.json",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "de.hsrm.personalportal.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"async": true
+			},
+			"routes": [
+				{
+					"name": "login",
+					"pattern": "",
+					"target": "login"
+				},
+				{
+					"name": "home",
+					"pattern": "home",
+					"target": "home"
+				},
+				{
+					"name": "notAuthorized",
+					"pattern": "kein-zugriff",
+					"target": "notAuthorized"
+				}
+			],
+			"targets": {
+				"login": {
+					"id": "login",
+					"name": "Login"
+				},
+				"home": {
+					"id": "home",
+					"name": "Home"
+				},
+				"notAuthorized": {
+					"id": "notAuthorized",
+					"name": "NotAuthorized"
+				}
+			}
+		}
+	}
+}
