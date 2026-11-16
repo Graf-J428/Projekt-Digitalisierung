@@ -1,0 +1,13 @@
+{
+	"_hinweis": "Kacheln der Startseite. 'permission' verweist auf einen Eintrag in permissions.json.",
+	"tiles": [
+		{ "permission": "profil",        "area": "self",    "title": "Meine Daten",            "subtitle": "Stammdaten, Anschrift, Bank", "icon": "sap-icon://person-placeholder" },
+		{ "permission": "urlaub",        "area": "self",    "title": "Urlaub",                 "subtitle": "Antrag und Resturlaub",       "icon": "sap-icon://general-leave-request" },
+		{ "permission": "zeiten",        "area": "self",    "title": "Zeiterfassung",          "subtitle": "Zeiten erfassen, PDF-Export", "icon": "sap-icon://time-entry-request" },
+		{ "permission": "verzeichnis",   "area": "self",    "title": "Mitarbeiterverzeichnis", "subtitle": "Kolleginnen und Kollegen",    "icon": "sap-icon://address-book" },
+		{ "permission": "team",          "area": "manager", "title": "Mein Team",              "subtitle": "Team-Übersicht",              "icon": "sap-icon://group" },
+		{ "permission": "genehmigungen", "area": "manager", "title": "Genehmigungen",          "subtitle": "Anträge prüfen",              "icon": "sap-icon://approvals" },
+		{ "permission": "teamKalender",  "area": "manager", "title": "Teamkalender",           "subtitle": "Abwesenheiten im Team",       "icon": "sap-icon://calendar" },
+		{ "permission": "admin",         "area": "admin",   "title": "Administration",         "subtitle": "Anträge und Rollen verwalten","icon": "sap-icon://action-settings" }
+	]
+}

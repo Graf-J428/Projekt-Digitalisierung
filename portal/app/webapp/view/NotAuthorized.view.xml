@@ -1,0 +1,16 @@
+<mvc:View
+	controllerName="de.hsrm.personalportal.controller.NotAuthorized"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<!-- Seite "Keine Berechtigung" (KAN-51) -->
+	<MessagePage
+		id="notAuthorizedPage"
+		showHeader="false"
+		icon="sap-icon://locked"
+		text="{i18n>noAccessTitle}"
+		description="{i18n>noAccessText}">
+		<buttons>
+			<Button text="{i18n>logoutButton}" type="Emphasized" press=".onLogout" />
+		</buttons>
+	</MessagePage>
+</mvc:View>

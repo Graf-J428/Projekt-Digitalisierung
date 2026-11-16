@@ -1,0 +1,8 @@
+<mvc:View
+	controllerName="de.hsrm.personalportal.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true">
+	<!-- Container für alle Seiten; der Router tauscht hier die Views (Login, Home, ...) -->
+	<App id="app" />
+</mvc:View>

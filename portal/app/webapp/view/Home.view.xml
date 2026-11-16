@@ -1,0 +1,63 @@
+<mvc:View
+	controllerName="de.hsrm.personalportal.controller.Home"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<!-- Startseite: gleiche Seite für alle, Kacheln abhängig von der Berechtigung -->
+	<Page id="homePage" class="homePage">
+		<customHeader>
+			<Bar>
+				<contentLeft>
+					<core:Icon src="sap-icon://employee" class="sapUiTinyMarginBegin headerLogo" />
+					<Title text="{i18n>appTitle}" level="H1" />
+				</contentLeft>
+				<contentRight>
+					<ObjectStatus text="{session>/roleText}" state="Information" inverted="true" />
+					<Text text="{session>/name}" class="sapUiTinyMarginBegin" />
+					<!-- Logout (KAN-25) -->
+					<Button
+						id="logoutButton"
+						icon="sap-icon://log"
+						text="{i18n>logoutButton}"
+						tooltip="{i18n>logoutButton}"
+						press=".onLogout" />
+				</contentRight>
+			</Bar>
+		</customHeader>
+
+		<VBox class="sapUiMediumMargin">
+			<Title text="{i18n>homeWelcome}" level="H2" titleStyle="H3" />
+			<Text text="{i18n>homeSubtitle}" class="sapUiTinyMarginTop" />
+
+			<!-- Bereich Mitarbeiter (ESS) -->
+			<VBox visible="{= ${homeView>/selfTiles}.length > 0 }">
+				<Title text="{i18n>homeSectionSelf}" level="H3" titleStyle="H5" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+				<HBox id="selfTiles" wrap="Wrap" items="{homeView>/selfTiles}">
+					<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginBottom" header="{homeView>title}" subheader="{homeView>subtitle}" press=".onTilePress">
+						<TileContent><ImageContent src="{homeView>icon}" /></TileContent>
+					</GenericTile>
+				</HBox>
+			</VBox>
+
+			<!-- Bereich Führungskraft (MSS) -->
+			<VBox id="managerArea" visible="{= ${homeView>/managerTiles}.length > 0 }">
+				<Title text="{i18n>homeSectionManager}" level="H3" titleStyle="H5" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+				<HBox id="managerTiles" wrap="Wrap" items="{homeView>/managerTiles}">
+					<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginBottom managerTile" header="{homeView>title}" subheader="{homeView>subtitle}" press=".onTilePress">
+						<TileContent><ImageContent src="{homeView>icon}" /></TileContent>
+					</GenericTile>
+				</HBox>
+			</VBox>
+
+			<!-- Bereich HR/Admin -->
+			<VBox id="adminArea" visible="{= ${homeView>/adminTiles}.length > 0 }">
+				<Title text="{i18n>homeSectionAdmin}" level="H3" titleStyle="H5" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+				<HBox id="adminTiles" wrap="Wrap" items="{homeView>/adminTiles}">
+					<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginBottom managerTile" header="{homeView>title}" subheader="{homeView>subtitle}" press=".onTilePress">
+						<TileContent><ImageContent src="{homeView>icon}" /></TileContent>
+					</GenericTile>
+				</HBox>
+			</VBox>
+		</VBox>
+	</Page>
+</mvc:View>

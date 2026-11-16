@@ -1,0 +1,70 @@
+<mvc:View
+	controllerName="de.hsrm.personalportal.controller.Login"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<!-- Login-Seite (KAN-18): Anmeldung mit Testbenutzern, Rolle wird aus dem Benutzer ermittelt -->
+	<Page id="loginPage" showHeader="false" class="loginPage">
+		<FlexBox height="100%" alignItems="Center" justifyContent="Center">
+			<VBox id="loginCard" width="24rem" class="loginCard">
+
+				<!-- Kopfbereich: Icon, Titel, Hinweis -->
+				<VBox alignItems="Center" class="sapUiSmallMarginBottom">
+					<core:Icon src="sap-icon://employee" size="3rem" class="loginLogo" />
+					<Title text="{i18n>appTitle}" level="H1" titleStyle="H2" class="sapUiSmallMarginTop" />
+					<Text text="{i18n>loginSubtitle}" textAlign="Center" class="sapUiTinyMarginTop" />
+				</VBox>
+
+				<!-- Hinweis nach automatischer Abmeldung wegen Inaktivität -->
+				<MessageStrip
+					id="timeoutInfo"
+					text="{i18n>loginTimedOut}"
+					type="Information"
+					showIcon="true"
+					visible="{session>/timedOut}"
+					class="sapUiSmallMarginBottom" />
+
+				<!-- Fehlermeldung, nur sichtbar bei falscher oder fehlender Eingabe -->
+				<MessageStrip
+					id="loginError"
+					text="{loginView>/errorText}"
+					type="Error"
+					showIcon="true"
+					visible="{= !!${loginView>/errorText} }"
+					class="sapUiSmallMarginBottom" />
+
+				<!-- Eingabefelder -->
+				<Label text="{i18n>loginUserLabel}" labelFor="userInput" required="true" class="sapUiSmallMarginTop" />
+				<Input
+					id="userInput"
+					width="100%"
+					value="{loginView>/username}"
+					valueLiveUpdate="true"
+					placeholder="{i18n>loginUserPlaceholder}"
+					submit=".onLoginPress" />
+
+				<Label text="{i18n>loginPasswordLabel}" labelFor="passwordInput" required="true" class="sapUiSmallMarginTop" />
+				<Input
+					id="passwordInput"
+					type="Password"
+					width="100%"
+					value="{loginView>/password}"
+					valueLiveUpdate="true"
+					placeholder="{i18n>loginPasswordPlaceholder}"
+					submit=".onLoginPress" />
+
+				<!-- Anmelde-Button -->
+				<Button
+					id="loginButton"
+					text="{i18n>loginButton}"
+					type="Emphasized"
+					width="100%"
+					press=".onLoginPress"
+					class="sapUiMediumMarginTop" />
+
+				<Text text="{i18n>loginTestHint}" textAlign="Center" width="100%" class="sapUiSmallMarginTop loginFooter" />
+				<Text text="{i18n>loginFooter}" textAlign="Center" width="100%" class="sapUiTinyMarginTop loginFooter" />
+			</VBox>
+		</FlexBox>
+	</Page>
+</mvc:View>

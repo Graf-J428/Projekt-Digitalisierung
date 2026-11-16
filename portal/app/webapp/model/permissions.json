@@ -1,0 +1,12 @@
+{
+	"_hinweis": "Berechtigungsmatrix aus KAN-27 (docs/05-rollen-berechtigungskonzept.md): Route/Funktion -> erlaubte Rollen.",
+	"home":          ["ESS", "MSS", "HR"],
+	"profil":        ["ESS", "MSS", "HR"],
+	"urlaub":        ["ESS", "MSS", "HR"],
+	"zeiten":        ["ESS", "MSS", "HR"],
+	"verzeichnis":   ["ESS", "MSS", "HR"],
+	"team":          ["MSS", "HR"],
+	"genehmigungen": ["MSS", "HR"],
+	"teamKalender":  ["MSS", "HR"],
+	"admin":         ["HR"]
+}

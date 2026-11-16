@@ -1,0 +1,45 @@
+/*
+ * Eigene Styles für das Personal-Portal (Theme: SAP Fiori Horizon).
+ * Theme-Parameter sind als CSS-Variablen nicht immer verfügbar,
+ * daher steht hinter jeder Variable der Horizon-Standardwert als Fallback.
+ */
+
+/* Login-Seite: ruhiger Hintergrund */
+.loginPage .sapMPageEnableScrolling {
+	background-color: var(--sapBackgroundColor, #f5f6f7);
+}
+
+/* Login-Karte; doppelte Klasse überschreibt die UI5-Klasse sapMFlexBoxBGTransparent */
+.sapMFlexBox.loginCard {
+	background-color: var(--sapGroup_ContentBackgroundColor, #ffffff);
+	border-radius: 1rem;
+	box-shadow: var(--sapContent_Shadow1, 0 0 0.125rem 0 rgba(34, 53, 72, 0.2), 0 0.125rem 0.5rem 0 rgba(34, 53, 72, 0.2));
+	padding: 2rem;
+	box-sizing: border-box;
+	max-width: calc(100vw - 2rem);
+}
+
+.loginLogo {
+	color: var(--sapBrandColor, #0070f2) !important;
+}
+
+.sapMText.loginFooter {
+	color: var(--sapContent_LabelColor, #556b82);
+	font-size: var(--sapFontSmallSize, 0.75rem);
+}
+
+/* Startseite */
+.homePage .sapMPageEnableScrolling {
+	background-color: var(--sapBackgroundColor, #f5f6f7);
+}
+
+.headerLogo {
+	color: var(--sapBrandColor, #0070f2) !important;
+	font-size: 1.5rem;
+	margin-right: 0.5rem;
+}
+
+/* Kacheln im Führungskraft-Bereich farblich absetzen */
+.managerTile.sapMGT {
+	border-top: 0.25rem solid var(--sapBrandColor, #0070f2);
+}
