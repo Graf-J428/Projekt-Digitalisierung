@@ -1,0 +1,54 @@
+/*
+ * Design-Tokens des HR-Portals
+ * Quelle: docs/04-styleguide.md – Werte nur hier ändern, nie direkt in einer Seite.
+ */
+
+/* Schriften lokal eingebunden (kein Abruf bei Google, DSGVO-freundlich). Lizenz: ../fonts/OFL.txt */
+@font-face { font-family: "IBM Plex Sans"; font-weight: 400; font-style: normal; font-display: swap; src: url("../fonts/IBMPlexSans-Regular.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-weight: 500; font-style: normal; font-display: swap; src: url("../fonts/IBMPlexSans-Medium.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-weight: 600; font-style: normal; font-display: swap; src: url("../fonts/IBMPlexSans-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-style: normal; font-display: swap; src: url("../fonts/IBMPlexMono-Regular.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-style: normal; font-display: swap; src: url("../fonts/IBMPlexMono-Medium.woff2") format("woff2"); }
+
+:root {
+  /* Farben – Marke und Aktion */
+  --color-primary: #0A6ED1;        /* 5,0 : 1 auf Weiß */
+  --color-primary-dark: #0854A0;   /* Hover, Links auf Hellblau – 7,5 : 1 */
+  --color-primary-light: #E5F0FA;  /* Hinweisflächen, Auswahl */
+  --color-heading: #0F2A3D;
+
+  /* Farben – Text und Flächen */
+  --color-text: #14212B;           /* 16,4 : 1 */
+  --color-text-secondary: #4A5B68; /* 7,0 : 1 */
+  --color-border-input: #8396A8;   /* 3,1 : 1 – Pflicht für Bedienelemente (WCAG 1.4.11) */
+  --color-border: #D3DFEC;         /* nur dekorativ */
+  --color-bg: #F5F8FC;
+  --color-surface: #FFFFFF;
+
+  /* Farben – Status (Text auf Weiß) */
+  --color-info: #0A6ED1;
+  --color-success: #107E3E;
+  --color-warning: #B35400;
+  --color-error: #BB0000;
+
+  /* Schrift */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Abstände – 8-px-Raster */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 48px;
+  --space-9: 64px;
+
+  /* Formen */
+  --radius-control: 8px;   /* Felder, Buttons */
+  --radius-card: 12px;     /* Karten, Dialoge */
+  --control-height: 48px;  /* Standard; Minimum 44 px (WCAG 2.5.5) */
+  --shadow-floating: 0 10px 30px rgba(10, 60, 120, 0.12), 0 2px 6px rgba(10, 60, 120, 0.06);
+}

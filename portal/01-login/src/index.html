@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anmeldung – HR Portal</title>
+  <link rel="stylesheet" href="../../shared/css/tokens.css">
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- Hintergrund im Fiori-Stil (nur Einstiegsseiten, siehe Styleguide) -->
+    <svg class="page-bg" aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice">
+      <path d="M0 560 C 260 470, 520 640, 800 560 S 1260 420, 1440 500 L 1440 900 L 0 900 Z" fill="#B9D4F1" opacity="0.55"/>
+      <path d="M0 670 C 300 600, 560 760, 900 680 S 1300 590, 1440 640 L 1440 900 L 0 900 Z" fill="#8FBAE8" opacity="0.55"/>
+      <path d="M0 780 C 340 730, 640 840, 980 790 S 1320 740, 1440 770 L 1440 900 L 0 900 Z" fill="#5E9BDD" opacity="0.55"/>
+      <circle cx="1260" cy="140" r="220" fill="#FFFFFF" opacity="0.35"/>
+      <circle cx="180" cy="260" r="140" fill="#FFFFFF" opacity="0.25"/>
+    </svg>
+
+    <!-- Kopfzeile -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18.5 14.5c1.9.8 3 2.7 3 5.5"/></svg>
+        </span>
+        <span class="brand-name">HR Portal</span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-org">UCC Magdeburg</span>
+      </div>
+      <label class="lang">
+        <span>Sprache</span>
+        <select class="select lang-select" name="sprache">
+          <option value="de" selected>Deutsch</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </header>
+
+    <!-- Anmeldung -->
+    <main class="main">
+      <section class="card login-card" aria-labelledby="login-title">
+        <div class="login-head">
+          <h1 id="login-title">Anmelden</h1>
+          <p>Melden Sie sich mit Ihrem SAP-Benutzerkonto an.</p>
+        </div>
+
+        <form class="login-form" id="login-form" novalidate>
+          <div class="field">
+            <label class="field-label" for="username">Benutzername</label>
+            <input class="input" id="username" name="username" type="text" autocomplete="username" autocapitalize="characters" spellcheck="false">
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="password">Passwort</label>
+            <div class="password-wrap">
+              <input class="input" id="password" name="password" type="password" autocomplete="current-password">
+              <button class="btn-icon password-toggle" type="button" id="password-toggle" aria-label="Passwort anzeigen" aria-pressed="false" aria-controls="password">
+                <svg class="icon-show" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                <svg class="icon-hide" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 5.1A10.7 10.7 0 0 1 12 5c6.4 0 10 7 10 7a17.6 17.6 0 0 1-3.2 4.1M6.6 6.6C3.8 8.3 2 12 2 12s3.6 7 10 7a9.9 9.9 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="login-options">
+            <label class="checkbox">
+              <input type="checkbox" name="remember">
+              Angemeldet bleiben
+            </label>
+            <a href="#" class="forgot-link" id="forgot-link">Passwort vergessen?</a>
+          </div>
+
+          <button class="btn btn-primary login-submit" type="submit">Anmelden</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Fußzeile -->
+    <footer class="footer">
+      <span>© 2026 SAP University Competence Center Magdeburg</span>
+      <nav aria-label="Rechtliches" class="footer-nav">
+        <a href="#">Hilfe</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">Impressum</a>
+      </nav>
+    </footer>
+
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/*
+ * Grundstile und wiederverwendbare Bausteine aller Seiten.
+ * Setzt tokens.css voraus.
+ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+a { color: var(--color-primary); }
+a:hover { color: var(--color-primary-dark); }
+
+/* Sichtbarer Fokus für Tastaturbedienung */
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  height: var(--control-height); padding: 0 var(--space-5);
+  border: 1px solid transparent; border-radius: var(--radius-control);
+  font: 600 16px/1 var(--font-sans); text-decoration: none; cursor: pointer;
+}
+.btn-primary { background: var(--color-primary); color: #FFFFFF; }
+.btn-primary:hover { background: var(--color-primary-dark); color: #FFFFFF; }
+.btn-secondary { background: var(--color-surface); color: var(--color-text); border-color: var(--color-border-input); font-weight: 500; }
+.btn-secondary:hover { background: var(--color-bg); }
+.btn-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; padding: 0; border: 0; border-radius: var(--radius-control);
+  background: transparent; color: var(--color-text-secondary); cursor: pointer;
+}
+.btn-icon:hover { background: var(--color-bg); color: var(--color-text); }
+
+/* ---------- Formularfelder ---------- */
+.field { display: flex; flex-direction: column; gap: var(--space-2); }
+.field-label { font-size: 14px; font-weight: 500; color: var(--color-text); }
+.input, .select {
+  width: 100%; height: var(--control-height); padding: 0 14px;
+  font: 400 16px/1.2 var(--font-sans); color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-input); border-radius: var(--radius-control);
+}
+.input:focus, .select:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; border-color: var(--color-primary); }
+.checkbox { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; color: #33434F; cursor: pointer; }
+.checkbox input { width: 18px; height: 18px; margin: 0; accent-color: var(--color-primary); }
+
+/* ---------- Karte ---------- */
+.card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); }
