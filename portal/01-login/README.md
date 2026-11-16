@@ -2,6 +2,8 @@
 
 Anmeldung am HR-Portal mit dem SAP-Benutzerkonto.
 
+![Login (Desktop)@1x](mockup/Login%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Benutzername und Passwort (mit „Passwort anzeigen“)

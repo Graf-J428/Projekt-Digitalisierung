@@ -2,6 +2,8 @@
 
 Kontaktdaten und Anwesenheit aller Mitarbeitenden.
 
+![Mitarbeiterverzeichnis (Desktop)@1x](mockup/Mitarbeiterverzeichnis%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Suche nach Name, Personalnummer oder Position
@@ -16,5 +18,5 @@ Kontaktdaten und Anwesenheit aller Mitarbeitenden.
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

@@ -2,6 +2,8 @@
 
 Teamkalender mit allen Urlauben und Abwesenheiten eines Monats.
 
+![Urlaubsplan (Desktop)@1x](mockup/Urlaubsplan%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Kennzahlen: Resturlaub, genehmigte Tage, offene Anträge, Abwesende im Team
@@ -20,5 +22,5 @@ Teamkalender mit allen Urlauben und Abwesenheiten eines Monats.
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

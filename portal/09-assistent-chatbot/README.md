@@ -2,6 +2,8 @@
 
 Seitenleiste, die beim Ausfüllen von Anträgen hilft (Beispiel: Bildungsurlaub).
 
+![Assistent (Desktop)@1x](mockup/Assistent%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Anliegen in eigenen Worten beschreiben; der Assistent schlägt Formularwerte vor
@@ -15,5 +17,5 @@ Seitenleiste, die beim Ausfüllen von Anträgen hilft (Beispiel: Bildungsurlaub)
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

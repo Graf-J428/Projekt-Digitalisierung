@@ -2,6 +2,8 @@
 
 Erste Seite nach dem Login, aufgebaut wie ein SAP Fiori Launchpad: zuerst „Was muss ich tun?“, dann „Wo finde ich was?“.
 
+![Startseite (Desktop)@1x](mockup/Startseite%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Begrüßung und Suche über das ganze Portal
@@ -15,5 +17,5 @@ Erste Seite nach dem Login, aufgebaut wie ein SAP Fiori Launchpad: zuerst „Was
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

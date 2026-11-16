@@ -32,18 +32,18 @@ Jeder Seitenordner unter `portal/` ist gleich aufgebaut:
 
 | Nr. | Seite | Mockup | Code |
 |---|---|---|---|
-| 00 | [Styleguide](portal/00-styleguide/) | offen | – |
+| 00 | [Styleguide](portal/00-styleguide/) | vorhanden | – |
 | 01 | [Login](portal/01-login/) | vorhanden | offen |
-| 02 | [Startseite](portal/02-startseite/) | offen | offen |
-| 03 | [Mitarbeiterverzeichnis](portal/03-mitarbeiterverzeichnis/) | offen | offen |
-| 04 | [Urlaubsplan](portal/04-urlaubsplan/) | offen | offen |
-| 05 | [Abwesenheiten inkl. Genehmigungsablauf](portal/05-abwesenheiten/) | offen | offen |
-| 06 | [Zeiterfassung](portal/06-zeiterfassung/) | offen | offen |
-| 07 | [Meine Daten (Employee Self Service)](portal/07-meine-daten-ess/) | offen | offen |
-| 08 | [Genehmigungen (Manager Self Service)](portal/08-genehmigungen-mss/) | offen | offen |
-| 09 | [Assistent (Chatbot)](portal/09-assistent-chatbot/) | offen | offen |
-| 10 | [Leistungsbeurteilungen](portal/10-leistungsbeurteilungen/) | offen | offen |
-| 11 | [Reisekosten](portal/11-reisekosten/) | offen | offen |
+| 02 | [Startseite](portal/02-startseite/) | vorhanden | offen |
+| 03 | [Mitarbeiterverzeichnis](portal/03-mitarbeiterverzeichnis/) | vorhanden | offen |
+| 04 | [Urlaubsplan](portal/04-urlaubsplan/) | vorhanden | offen |
+| 05 | [Abwesenheiten inkl. Genehmigungsablauf](portal/05-abwesenheiten/) | vorhanden | offen |
+| 06 | [Zeiterfassung](portal/06-zeiterfassung/) | vorhanden | offen |
+| 07 | [Meine Daten (Employee Self Service)](portal/07-meine-daten-ess/) | vorhanden | offen |
+| 08 | [Genehmigungen (Manager Self Service)](portal/08-genehmigungen-mss/) | vorhanden | offen |
+| 09 | [Assistent (Chatbot)](portal/09-assistent-chatbot/) | vorhanden | offen |
+| 10 | [Leistungsbeurteilungen](portal/10-leistungsbeurteilungen/) | vorhanden | offen |
+| 11 | [Reisekosten](portal/11-reisekosten/) | vorhanden | offen |
 
 ## Konventionen
 

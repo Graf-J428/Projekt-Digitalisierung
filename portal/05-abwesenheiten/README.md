@@ -2,6 +2,8 @@
 
 Abwesenheiten beantragen und den Stand der Genehmigung verfolgen.
 
+![Abwesenheiten (Desktop)@1x](mockup/Abwesenheiten%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Antrag: Art (Urlaub, Home-Office, Fortbildung, Bildungsurlaub, Dienstreise), Zeitraum, halbe Tage, Vertretung, Bemerkung
@@ -20,5 +22,5 @@ Abwesenheiten beantragen und den Stand der Genehmigung verfolgen.
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

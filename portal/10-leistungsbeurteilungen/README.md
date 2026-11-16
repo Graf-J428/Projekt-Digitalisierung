@@ -2,6 +2,8 @@
 
 Jährliche Beurteilung aus Sicht der Beschäftigten.
 
+![Leistungsbeurteilungen (Desktop)@1x](mockup/Leistungsbeurteilungen%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Ablauf: Zielvereinbarung → Selbsteinschätzung → Gespräch → Abschluss
@@ -17,5 +19,5 @@ Jährliche Beurteilung aus Sicht der Beschäftigten.
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code
