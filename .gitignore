@@ -1,0 +1,17 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Editoren
+.vscode/
+.idea/
+
+# Abhängigkeiten und Build
+node_modules/
+dist/
+build/
+
+# Zugangsdaten – niemals einchecken (z. B. SAP-Benutzer, Passwörter)
+.env
+.env.*
+!.env.example
