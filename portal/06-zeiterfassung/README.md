@@ -2,6 +2,8 @@
 
 Gebuchte Arbeitszeiten prüfen, Korrekturen beantragen und Auswertungen exportieren.
 
+![Zeiterfassung (Desktop)@1x](mockup/Zeiterfassung%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Kennzahlen: Ist-Zeit und Saldo der Woche, Gleitzeitkonto, offene Korrekturen
@@ -19,5 +21,5 @@ Gebuchte Arbeitszeiten prüfen, Korrekturen beantragen und Auswertungen exportie
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

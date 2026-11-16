@@ -2,6 +2,8 @@
 
 Eigene Stammdaten einsehen und Änderungen beantragen.
 
+![Meine Daten (Desktop)@1x](mockup/Meine%20Daten%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Profilkopf: Personalnummer, Eintritt, Führungskraft
@@ -24,5 +26,5 @@ Eigene Stammdaten einsehen und Änderungen beantragen.
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

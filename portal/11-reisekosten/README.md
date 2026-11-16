@@ -2,6 +2,8 @@
 
 Dienstreisen beantragen und abrechnen.
 
+![Reisekosten (Desktop)@1x](mockup/Reisekosten%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Kennzahlen: offene Abrechnungen, abzurechnender Betrag, Erstattungen im Jahr
@@ -17,5 +19,5 @@ Dienstreisen beantragen und abrechnen.
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code

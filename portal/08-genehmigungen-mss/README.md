@@ -2,6 +2,8 @@
 
 Sicht der Führungskraft auf die Anträge ihres Teams.
 
+![Genehmigungen (Desktop)@1x](mockup/Genehmigungen%20%28Desktop%29%401x.png)
+
 ## Funktionen
 
 - Liste offener Anträge, filterbar nach Art (Urlaub, Zeitkorrektur, …)
@@ -15,5 +17,5 @@ Sicht der Führungskraft auf die Anträge ihres Teams.
 
 ## Stand
 
-- [ ] Mockup
+- [x] Mockup (`mockup/`)
 - [ ] Code
